@@ -25,7 +25,9 @@ changes, learn some basic linux skills, and learn at least one version control s
   * Learn a bit about git: http://try.github.io/
   * Make me (ungood) a collaborator in github for that repo so I can edit it.
     * Collaborator settings are in the settings tab in teh github UI.
-* Once you've done the above, edit this file (first.md) with a link to the repository you created in github.
+* Once you've done the above, edit this file (first.md) with a link to the repository you created in github. 
+
+[I am a link](https://github.com/OpRaider/TestRepository)
 
 Then we'll begin the second "assignment"
 
