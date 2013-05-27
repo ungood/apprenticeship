@@ -1,6 +1,6 @@
 "Assignments"
 -------------
-1. [https://github.com/ungood/apprenciteship/blob/master/first.md first.md]
+1. [first.md](https://github.com/ungood/apprenciteship/blob/master/first.md)
 
 Hard Skills
 -----------
