@@ -1,4 +1,5 @@
 Assignment #1 - first commit in github
+----------
 
 First things first.  We'll need a better way to communicate and comment on code than email.
 That's where github comes in. Github is a public git host, and git is a popular (and free)
