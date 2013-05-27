@@ -28,6 +28,17 @@ changes, learn some basic linux skills, and learn at least one version control s
 
 Then we'll begin the second "assignment"
 
+In the meantime, read a bit about C++, Java, and C#.  We'll want to pick a language to use for future assignments.
+* C++ you already know a bit about, and while it is very important, it is somewhat cumbersome and is being
+  used less and less in the real world.
+* Java is a good pragramatic choice and based on C++, but it is falling a bit behind in terms of features
+  compared to C#.  It is, however, used in tons of places (Amazon included).
+* C# is a Microsoft-designed language, and you're already familiar with the IDE (Visual Studio).  It's got
+  quite a good syntax, and some nice new features.
+
+Other choices if you'd like to try something new could be python, ruby, or javascript.  A good programmer
+learns as many languages as he can.
+
 "Extra Credit"
 --------------
 * Fork a repository: https://help.github.com/articles/fork-a-repo
