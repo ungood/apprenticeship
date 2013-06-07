@@ -2,6 +2,7 @@
 -------------
 1. [first.md](https://github.com/ungood/apprenciteship/blob/master/first.md)
 2. [strings.md](https://github.com/ungood/apprenciteship/blob/master/strings.md)
+3. [linkedlist.md](https://github.com/ungood/apprenciteship/blob/master/linkedlist.md)
 
 Hard Skills
 -----------
