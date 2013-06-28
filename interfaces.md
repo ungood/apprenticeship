@@ -70,4 +70,20 @@ dynamicly-sized array.  I've also provided one unit test for each.
 Tasks
 -----
 
-You're going to 
+You're going to implement your own versions of IStack, IQueue, and IDequeue using a double-linked list.  You have
+several options for doing so: you can create a DoubleLinkedList class and use it as a private field in your
+implementations, or you can use it as a base class.  You can even decide to simply implement all 3 interfaces in the DoubleLinkedList
+class.
+
+1.  Create a dummy implentation of each interface, however you want.
+2.  Replace the ArrayStack, ArrayQueue, and ArrayDequeue constructors in the unit tests with your implementations.
+3.  The unit tests should now fail (because your implementation is currently a dummy).
+4.  Finish the implemntations, making the tests pass.
+5.  Add unit tests as necessary to test every edge case.
+6.  Comment on the pros/cons of a linked list implementation for each ADT vs an array.
+
+Notes
+-----
+Okay, this one is similar to the last.  I promise I'm building up to some more fun assignments with more problem
+solving.  I first gotta cover the basics, though.  If you want a teaser, look up the tower of hanoi problem - but
+DONT CHEAT by reading any solutions. :)
