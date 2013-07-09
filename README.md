@@ -4,6 +4,7 @@
 2. [strings.md](https://github.com/ungood/apprenciteship/blob/master/strings.md)
 3. [linkedlist.md](https://github.com/ungood/apprenciteship/blob/master/linkedlist.md)
 4. [interfaces.md](https://github.com/ungood/apprenciteship/blob/master/interfaces.md)
+5. [recursion.md](https://github.com/ungood/apprenciteship/blob/master/recursion.md)
 
 Hard Skills
 -----------
