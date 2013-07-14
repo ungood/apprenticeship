@@ -18,19 +18,19 @@ Hard Skills
   * Testing (unit testing)
   * Big-O, and memory/CPU tradeoffs
 * Data Structures
-  * Arrays and Strings
-  * Linked Lists
+  * ~~Arrays and Strings~~
+  * ~~Linked Lists~~
   * Hash Maps/Sets
-  * Stacks and Queues
+  * ~~Stacks and Queues~~
   * Trees and Graphs
 * Algorithms
-  * Sorting (radix sort & count sort) and Searching
-  * Recursion
+  * Sorting (radix sort & count sort) and Searching (binary search)
+  * ~~Recursion~~
   * Dynamic Programming
 * Other 
   * Bits and bytes
   * Threading
-  * source control (git)
+  * ~~source control (git)~~
 
 Soft skills
 -----------
