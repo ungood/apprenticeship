@@ -159,12 +159,45 @@ and Equals methods for classes you define, if you want to use them as a key in a
 
 Assignment
 ----------
-Finally, the assignment! You will implement a hash table using either the chaining or probing method for conflict
-resolution.  You will also implement two ADTs - IMap and ISet - which are often implemented with hash tables (though
-like most ADTs, can be implemented in a variety of ways).  Maps are simply the abstract definition of what a hash
-table does (store items by a key), and are also known as dictionaries (e.g. C# calls them this) or associate arrays.
-Sets are related to the mathematical notion of a set - a collection of distinct things - where you don't really 
-care to search, you just want to know if the set contains some element.
+Finally, the assignment! I have added two new ADTs for you to implement.
 
-Like before, I'll provide the interfaces to implement, and a stubbed hash table class, but I won't provide the unit
-tests - it's your turn to write them.
+1. IMap<TKey, TValue> is an interface that is often implemented with hash tables (though like most ADTs, can be
+implemented in a variety of ways).  Another name for a map (that .NET uses) is a Dictionary - which is pretty descriptive
+of what this ADT is all about - it stores entries based on a key, so that you can look them up later.
+
+2. ISet<T> is related to the math concept of sets - an unordered collection of distinct things.  Sometimes you don't care
+about order, or that X maps to Y, you just want to know if a particular colletion of things contains something.  One
+example would be to find all the distinct words is a novel.
+
+I've provided an implementation of these interfaces using arrays, but it's terribly inefficient.  You should implement
+your own versions using hash tables instead - using either the chaining or probing strategy (or a collision strategy
+of your own design if you want).
+
+I've also provided a sample program for looking up Students by ID, as an example of how a map is used.  However, I have
+provided no unit tests - you should write those.
+
+Finally, if you use the chaining strategy, you'll probably want a way to iterate over a linked list (to search it), so
+I've made IStack, IQueue, and IDequeue implement IEnumerable, which allows you to use foreach to loop through all the
+items any of the implementations of those interfaces.
+
+Extra Credit, Refactoring
+-------------------------
+Refactoring is a phrase used to describe making changes to code without actually changing its behavior.  A rule I like
+to use at work is the "boy scout rule" - always leave something cleaner than you found it.  Often times, large code
+bases get messy.  Messy code is hard to read and understand, and often times is hard to change.  I may want to 
+rewrite the code entirely to clean it up, but I can't always do that due to lack of time.  So, I make a policy of
+cleaning up one small thing anytime I edit any file.  That way, I can slowly work towards a clean code base.  This
+is what refactoring is all about - and one thing that makes the difference between a 2-bit code monkey, and a
+professional software developer.
+
+So, going through the DoubleLinkedX classes, I find that you repeat code a bunch.  One of the most important rules to
+writing clean, professional code is DRY: Don't Repeat Yourself.
+
+In particular, Enqueue, Push, AddFront, AddBack are all very similar.  You could simplify these methods a lot by
+adding an AddBefore and AddAfter method to your DoubleLinkedNode class (and have that method return the new node).
+
+Likewise, you may be able to do something similar with the remove methods.
+
+One really nice benefit of unit tests is that good unit tests give you the freedom to refactor code without fear that
+you break anything.  If you trust your unit tests, then you can refactor things, try new ways of doing something, 
+clean up dead code, etc... all while knowing you won't break your program doing so.
