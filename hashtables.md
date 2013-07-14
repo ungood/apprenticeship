@@ -54,18 +54,20 @@ N (key % N) or equivalently, the remainder after dividing by N.  x % N will alwa
 
 So, a very simple hash table for integer keys might be something like:
 
-  const int Size = 100;
-  Student[] students = new Student[Size];
+```csharp
+const int Size = 100;
+Student[] students = new Student[Size];
+
+void Put(Student student) {
+  int index = student.Id % Size;
+  students[index] = student;
+}
   
-  void Put(Student student) {
-    int index = student.Id % Size;
-    students[index] = student;
-  }
-  
-  Student Get(int studentId) {
-    int index = studentId % Size;
-    return students[index];
-  }
+Student Get(int studentId) {
+  int index = studentId % Size;
+  return students[index];
+}
+```
   
 However, what if your key is not a number, but, for example, a string?  Well, luckily all things stored on a computer
 are ultimately numbers, so as long as you can convert your key into an int, you can then use the same procedure as
@@ -125,14 +127,16 @@ a university gives to a student to make sure all students have a unique id - you
 In C#, we might define some interfaces to define types that could be stored in a hash table.  It might look something
 like:
 
-  public interface IStoreable {
-    IHashable GetKey();
-  }
+```csharp
+public interface IStoreable {
+  IHashable GetKey();
+}
   
-  public interface IHashable {
-    int GetHashCode();
-    bool Equals(IHashable other);
-  }
+public interface IHashable {
+  int GetHashCode();
+  bool Equals(IHashable other);
+}
+```
   
 Then we could write a hashtable that stores anything that implements IStoreable.
 
