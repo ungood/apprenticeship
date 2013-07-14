@@ -5,6 +5,7 @@
 3. [linkedlist.md](https://github.com/ungood/apprenciteship/blob/master/linkedlist.md)
 4. [interfaces.md](https://github.com/ungood/apprenciteship/blob/master/interfaces.md)
 5. [recursion.md](https://github.com/ungood/apprenciteship/blob/master/recursion.md)
+6. [hashtables.md](https://github.com/ungood/apprenciteship/blob/master/hashtables.md)
 
 Hard Skills
 -----------
@@ -33,4 +34,7 @@ Hard Skills
 
 Soft skills
 -----------
-TBD
+* DRY: Don't Repeat Yourself
+* Boy Scout Rule: Always leave code cleaner than you found it.
+* YAGNI: You Ain't Going to Need It
+* ...
